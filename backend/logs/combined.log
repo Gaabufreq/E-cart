@@ -1,0 +1,345 @@
+[2026-09-02 21:43:02:519] [31merror[39m: [31m400 - Invalid input data - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-02 21:43:57:467] [31merror[39m: [31m400 - Invalid input data - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-02 21:52:49:186] [31merror[39m: [31m500 - error is not defined - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-02 21:53:09:913] [31merror[39m: [31m500 - error is not defined - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-02 21:55:54:828] [31merror[39m: [31m500 - error is not defined - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-02 21:57:38:277] [31merror[39m: [31m500 - error is not defined - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-02 22:44:19:942] [31merror[39m: [31m400 - User with this email already exists - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-03 01:36:04:758] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:04:761] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 01:36:04:968] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:05:201] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:05:545] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:05:968] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:06:898] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:08:683] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:12:029] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:17:190] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:22:269] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:27:304] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:32:439] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:37:472] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:42:571] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:47:673] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:52:834] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:36:57:879] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:03:074] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:08:231] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:13:423] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:18:621] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:23:795] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:29:005] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:34:104] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:39:170] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:44:318] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:49:496] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:54:524] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:37:59:707] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:04:836] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:09:936] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:15:071] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:20:201] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:25:276] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:30:422] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:35:480] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:40:533] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:45:696] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:50:890] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:38:55:934] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:01:134] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:06:292] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:11:417] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:16:439] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:21:552] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:26:558] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:31:641] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:36:754] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:41:918] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:47:077] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:52:264] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:39:57:326] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:02:522] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:07:704] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:12:894] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:17:906] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:22:960] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:28:094] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:33:181] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:38:359] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:43:556] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:48:751] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:53:915] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:40:59:105] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:41:04:251] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:41:09:311] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:41:14:365] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:01:130] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:01:133] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 01:43:01:204] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:01:386] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:01:724] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:02:170] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:03:036] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:04:731] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:08:033] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:13:123] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:18:130] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:23:241] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:28:307] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:33:358] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:38:508] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:43:552] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:48:707] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:53:732] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:43:58:877] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:09:453] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:09:456] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 01:44:09:691] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:09:892] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:10:226] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:10:673] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:11:670] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:13:302] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:16:717] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:21:749] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:26:816] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:32:007] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:37:152] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:42:304] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:47:338] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:52:495] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:44:57:699] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:02:865] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:08:015] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:13:192] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:18:233] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:23:273] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:28:448] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:33:608] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:38:691] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:43:857] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:48:887] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:54:073] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:45:59:172] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:04:264] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:09:298] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:14:353] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:19:540] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:24:693] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:29:815] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:35:018] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:40:064] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:45:236] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:50:332] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:46:55:445] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:00:475] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:05:658] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:10:746] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:15:848] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:20:981] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:26:131] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:31:193] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:36:256] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:41:391] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:46:593] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:51:667] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:47:56:842] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:01:971] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:07:050] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:12:253] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:17:335] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:22:443] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:27:598] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:32:795] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:37:852] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:42:921] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:48:122] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:53:287] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:48:58:401] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:03:541] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:08:601] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:13:723] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:18:831] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:24:025] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:29:082] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:34:229] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:39:285] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:44:299] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:49:494] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:54:568] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:49:59:630] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:04:827] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:09:875] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:14:882] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:19:891] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:24:925] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:30:046] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:35:077] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:40:139] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:45:236] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:50:50:297] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:59:43:057] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:59:43:060] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 01:59:43:282] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:59:43:434] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:59:43:667] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:59:44:196] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:59:45:014] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 01:59:46:712] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:34:680] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:34:683] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:01:34:890] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:35:090] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:35:372] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:35:823] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:36:640] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:38:305] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:41:566] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:46:604] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:51:614] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:01:56:675] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:02:01:770] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:05:40:236] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:05:40:239] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:05:40:357] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:05:40:573] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:05:40:888] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:08:59:754] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:08:59:756] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:08:59:867] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:09:00:082] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:09:00:396] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:10:40:184] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:10:40:187] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:10:40:295] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:10:40:514] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:10:40:828] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:10:58:345] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:10:58:348] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:10:58:452] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:10:58:654] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:10:58:966] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:13:44:270] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:13:44:272] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:13:44:381] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:13:44:598] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:13:44:914] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:16:59:571] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:16:59:574] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:16:59:688] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:16:59:903] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:17:00:220] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:19:05:519] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:19:05:525] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:19:05:636] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:19:06:963] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:19:06:968] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:19:07:077] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:19:07:295] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:19:07:613] [31merror[39m: [31mRedis connection error: [39m
+[2026-09-03 02:19:46:080] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:19:46:083] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:19:46:192] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:19:46:394] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:19:46:711] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:21:31:933] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:21:31:937] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:21:32:040] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:21:32:257] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:21:32:566] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:21:53:724] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:21:53:728] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:21:53:830] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:21:54:045] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:21:54:361] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:00:109] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:00:114] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:22:00:231] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:00:443] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:00:746] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:22:065] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:22:070] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:22:22:186] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:23:441] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:23:444] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:22:23:562] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:23:778] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:22:24:094] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:24:42:792] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:24:42:796] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:24:42:899] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:24:43:117] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:24:43:433] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:25:08:248] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:25:08:250] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:25:08:357] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:25:08:575] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:25:08:889] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:27:38:694] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:27:38:700] [33mwarn[39m: [33mRedis failed to connect. Running app without cache: Connection is closed.[39m
+[2026-09-03 02:27:38:812] [31merror[39m: [31mRedis connection error: connect ECONNREFUSED 127.0.0.1:6379[39m
+[2026-09-03 02:29:55:769] [31merror[39m: [31m401 - Invalid email or password - /api/v1/auth/login - POST - ::ffff:127.0.0.1[39m
+[2026-09-03 02:33:59:057] [31merror[39m: [31m400 - User with this email already exists - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-03 02:37:01:553] [31merror[39m: [31m404 - Can't find /api/v1/auth/lprofile on this server - /api/v1/auth/lprofile - GET - ::ffff:127.0.0.1[39m
+[2026-09-03 02:40:47:697] [31merror[39m: [31m429 - Too many login/register attempts from this IP, please try again after 15 minutes. - /api/v1/auth/login - POST - ::ffff:127.0.0.1[39m
+[2026-09-04 21:03:50:542] [31merror[39m: [31mRedis connection error: read ECONNRESET[39m
+[2026-09-04 21:03:50:653] [31merror[39m: [31mRedis connection error: getaddrinfo ENOTFOUND noted-redbird-185188.upstash.io[39m
+[2026-09-04 21:03:50:858] [31merror[39m: [31mRedis connection error: getaddrinfo ENOTFOUND noted-redbird-185188.upstash.io[39m
+[2026-09-04 21:03:51:175] [31merror[39m: [31mRedis connection error: getaddrinfo ENOTFOUND noted-redbird-185188.upstash.io[39m
+[2026-09-05 01:33:58:245] [31merror[39m: [31m404 - Can't find /api/v1/auth/products on this server - /api/v1/auth/products - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 01:50:14:929] [31merror[39m: [31m404 - Can't find /api/v1/auth/products on this server - /api/v1/auth/products - GET - ::ffff:127.0.0.1[39m
+[2026-09-09 04:25:49:474] [33mwarn[39m: [33mRazorpay KEY_ID or KEY_SECRET is missing in environment variables[39m
+[2026-09-09 04:25:52:488] [33mwarn[39m: [33mRazorpay KEY_ID or KEY_SECRET is missing in environment variables[39m
+[2026-09-09 04:32:03:956] [31merror[39m: [31m404 - Can't find /api/v1/p on this server - /api/v1/p - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 04:33:53:121] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 04:35:40:784] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 04:42:08:620] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 04:44:53:627] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 04:45:51:542] [31merror[39m: [31m400 - User with this email already exists - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 04:48:20:144] [31merror[39m: [31m404 - Can't find /cart/add on this server - /cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 04:49:31:894] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 04:59:47:855] [31merror[39m: [31m404 - Product not found - /api/v1/cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:09:26:320] [31merror[39m: [31m404 - Product not found - /api/v1/cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:10:07:998] [31merror[39m: [31m404 - Product not found - /api/v1/cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:10:09:218] [31merror[39m: [31m404 - Product not found - /api/v1/cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:10:10:140] [31merror[39m: [31m404 - Product not found - /api/v1/cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:11:06:167] [31merror[39m: [31m400 - User with this email already exists - /api/v1/auth/register - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:39:25:994] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:43:49:162] [31merror[39m: [31m400 - Cart is empty - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:43:59:834] [31merror[39m: [31m400 - Cart is empty - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:44:52:446] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:45:11:450] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:48:31:281] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:48:59:811] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:49:09:470] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:50:52:690] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:51:04:392] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:54:26:135] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:57:40:651] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 05:58:06:459] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 06:01:26:853] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 20:36:34:328] [31merror[39m: [31m400 - Unexpected token '"', ""{\n  \"em"... is not valid JSON - /api/v1/auth/login - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 20:41:47:766] [31merror[39m: [31m400 - Unexpected token '"', ""{\n  \"pr"... is not valid JSON - /api/v1/cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 20:41:54:484] [31merror[39m: [31m400 - Unexpected token '"', ""{\n  \"pr"... is not valid JSON - /api/v1/cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 20:56:32:272] [31merror[39m: [31m500 - toLowerCase is not defined - /api/v1/cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 20:58:34:564] [31merror[39m: [31m500 - toLowerCase is not defined - /api/v1/cart/add - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 21:05:44:080] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 21:07:13:206] [31merror[39m: [31m401 - undefined - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 21:13:49:555] [31merror[39m: [31m500 - Razorpay Order Creation Failed: Invalid API keys - /api/v1/orders/checkout - POST - ::ffff:127.0.0.1[39m
+[2026-09-09 21:24:12:389] [31merror[39m: [31m400 - Invalid payment signature. Payment failed. - /api/v1/orders/verify - POST - ::ffff:127.0.0.1[39m
+[2026-09-10 22:53:44:852] [31merror[39m: [31m500 - Supabase Upload Error: new row violates row-level security policy - /api/v1/products - POST - ::1[39m
+[2026-09-10 22:53:53:882] [31merror[39m: [31m500 - Supabase Upload Error: new row violates row-level security policy - /api/v1/products - POST - ::1[39m
+[2026-09-10 22:54:05:483] [31merror[39m: [31m500 - Supabase Upload Error: new row violates row-level security policy - /api/v1/products - POST - ::1[39m
+[2026-09-11 00:05:05:336] [31merror[39m: [31mRedis connection error: read ECONNRESET[39m
+[2026-09-11 00:08:13:516] [31merror[39m: [31m500 - Supabase Upload Error: new row violates row-level security policy - /api/v1/products - POST - ::1[39m
+[2026-09-11 00:09:08:110] [31merror[39m: [31m500 - Supabase Upload Error: new row violates row-level security policy - /api/v1/products - POST - ::1[39m
+[2026-09-11 02:10:16:141] [31merror[39m: [31m500 - orderService.cancelOrderUser is not a function - /api/v1/orders/cancel/6aa2fc101561f99f7b27035c - PATCH - ::1[39m
+[2026-09-11 02:10:21:513] [31merror[39m: [31m500 - orderService.cancelOrderUser is not a function - /api/v1/orders/cancel/6aa2fc101561f99f7b27035c - PATCH - ::1[39m
+[2026-09-11 02:37:44:601] [31merror[39m: [31m429 - Too many requests from this IP, please try again later. - /api/v1/products/6aa309aa0d45f1707461efab - DELETE - ::1[39m
+[2026-09-11 02:37:48:839] [31merror[39m: [31m429 - Too many requests from this IP, please try again later. - /api/v1/wishlist - GET - ::1[39m
+[2026-09-11 02:37:48:841] [31merror[39m: [31m429 - Too many requests from this IP, please try again later. - /api/v1/cart - GET - ::1[39m
+[2026-09-11 02:37:48:843] [31merror[39m: [31m429 - Too many requests from this IP, please try again later. - /api/v1/auth/profile - GET - ::1[39m
+[2026-09-11 02:37:48:845] [31merror[39m: [31m429 - Too many requests from this IP, please try again later. - /api/v1/wishlist - GET - ::1[39m
+[2026-09-11 02:37:48:847] [31merror[39m: [31m429 - Too many requests from this IP, please try again later. - /api/v1/cart - GET - ::1[39m
+[2026-09-11 02:37:48:850] [31merror[39m: [31m429 - Too many requests from this IP, please try again later. - /api/v1/auth/profile - GET - ::1[39m
+[2026-09-11 02:38:01:441] [31merror[39m: [31m429 - Too many requests from this IP, please try again later. - /api/v1/auth/login - POST - ::1[39m

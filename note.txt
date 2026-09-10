@@ -1,0 +1,75 @@
+frontend/
+├── public/
+│   ├── index.html                 # Tailwind CDN, Fonts & Razorpay Script
+│   └── favicon.ico
+├── src/
+│   ├── api/                       # Centralized Axios API Clients
+│   │   ├── axiosInstance.js       # Base Axios + JWT Bearer Token Interceptor
+│   │   ├── auth.api.js            # /auth (login, register, profile)
+│   │   ├── product.api.js         # /products (CRUD, getById)
+│   │   ├── cart.api.js            # /cart (get, add, remove)
+│   │   ├── order.api.js           # /orders (checkout, verify, admin list)
+│   │   └── wishlist.api.js        # /wishlist (get, toggle)
+│   │
+│   ├── context/                   # Global State (Context API)
+│   │   ├── AuthContext.jsx        # User Session, Token Storage, Login/Logout
+│   │   ├── CartContext.jsx        # Live Cart State & Badge Counter
+│   │   └── WishlistContext.jsx    # Wishlist State Sync
+│   │
+│   ├── hooks/                     # Custom Hooks for Easy Access
+│   │   ├── useAuth.js
+│   │   ├── useCart.js
+│   │   └── useWishlist.js
+│   │
+│   ├── components/                # Reusable UI Components
+│   │   ├── layout/
+│   │   │   ├── Navbar.jsx         # Sticky Header (#0F172A) + Search + Badges
+│   │   │   ├── Footer.jsx         # Page Footer
+│   │   │   ├── AdminSidebar.jsx   # Admin Panel Navigation
+│   │   │   └── ProtectedRoute.jsx # Route Guard for Auth & Admin Roles
+│   │   │
+│   │   ├── common/                # Shared Buttons, Inputs, Modals
+│   │   │   ├── Button.jsx         # Primary Buy (#FF6B00) & Add to Cart (#3B82F6)
+│   │   │   ├── Input.jsx          # Custom Form Inputs
+│   │   │   ├── Badge.jsx          # Stock & Discount Badges (#10B981)
+│   │   │   ├── Loader.jsx         # Loading Spinners
+│   │   │   └── Modal.jsx          # Reusable Popup Modal (Framer Motion)
+│   │   │
+│   │   ├── product/               # Product Specific UI
+│   │   │   ├── ProductCard.jsx    # Card with Hover, Ratings & Quick Add
+│   │   │   ├── ProductGrid.jsx    # Grid Display
+│   │   │   └── ProductFilter.jsx  # Price/Category Sidebar Filters
+│   │   │
+│   │   ├── cart/                  # Cart Specific UI
+│   │   │   ├── CartDrawer.jsx     # Slide-over Cart Drawer
+│   │   │   └── CartItem.jsx       # Individual Cart Row
+│   │   │
+│   │   └── checkout/              # Checkout Specific UI
+│   │       ├── ShippingForm.jsx   # Address Form matching backend Zod Schema
+│   │       └── OrderSummary.jsx   # Total Price + Razorpay Modal Trigger
+│   │
+│   ├── pages/                     # Route Views
+│   │   ├── Home.jsx               # Hero Carousel, Featured Products
+│   │   ├── Shop.jsx               # All Products + Search & Filtering
+│   │   ├── ProductDetail.jsx      # Product Info & Image Gallery
+│   │   ├── CartPage.jsx           # Dedicated Cart Screen
+│   │   ├── Checkout.jsx           # Shipping Address & Payment Screen
+│   │   ├── Orders.jsx             # User Order History
+│   │   ├── Login.jsx              # User/Admin Login Form
+│   │   ├── Register.jsx           # New Account Registration
+│   │   ├── NotFound.jsx           # 404 Page
+│   │   │
+│   │   └── admin/                 # Admin Panel Routes
+│   │       ├── Dashboard.jsx      # Metrics Summary
+│   │       ├── AdminProducts.jsx  # Product Add/Update/Delete Table
+│   │       └── AdminOrders.jsx    # Order Status Update Screen
+│   │
+│   ├── utils/                     # Helpers
+│   │   └── formatters.js          # INR Currency Formatter (₹)
+│   │
+│   ├── App.jsx                    # Routing System & Provider Wrappers
+│   ├── index.css                  # Global Styles
+│   └── index.js                   # Application Mount Point
+│
+├── .env                           # REACT_APP_API_URL=http://localhost:5000/api/v1
+└── package.json

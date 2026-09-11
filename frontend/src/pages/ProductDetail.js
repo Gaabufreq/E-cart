@@ -54,12 +54,12 @@ export const ProductDetail = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="bg-white rounded-3xl border border-slate-200 p-6 md:p-10 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <div className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 p-4 sm:p-8 lg:p-10 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10">
         
         {/* Left Image Gallery */}
-        <div className="flex flex-col gap-4">
-          <div className="aspect-square bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden flex items-center justify-center p-6">
+        <div className="flex flex-col gap-3 sm:gap-4">
+          <div className="aspect-square bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden flex items-center justify-center p-4 sm:p-6">
             <img
               src={selectedImage || 'https://via.placeholder.com/400'}
               alt={product.title}
@@ -68,12 +68,12 @@ export const ProductDetail = () => {
           </div>
 
           {product.images?.length > 1 && (
-            <div className="flex gap-3 overflow-x-auto pb-2">
+            <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-2">
               {product.images.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setSelectedImage(img)}
-                  className={`w-20 h-20 rounded-xl bg-slate-50 border p-1 shrink-0 ${
+                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-slate-50 border p-1 shrink-0 ${
                     selectedImage === img ? 'border-brand-buy ring-2 ring-brand-buy/20' : 'border-slate-200'
                   }`}
                 >
@@ -88,7 +88,7 @@ export const ProductDetail = () => {
         <div className="flex flex-col justify-between gap-6">
           <div>
             <div className="flex items-center justify-between gap-2 mb-2">
-              <span className="text-xs font-bold text-brand-buy uppercase tracking-wider bg-orange-50 px-2.5 py-1 rounded-lg">
+              <span className="text-[10px] sm:text-xs font-bold text-brand-buy uppercase tracking-wider bg-orange-50 px-2.5 py-1 rounded-lg">
                 {product.category}
               </span>
               <button
@@ -97,33 +97,33 @@ export const ProductDetail = () => {
                   isWishlisted ? 'bg-rose-50 border-rose-200 text-rose-500' : 'border-slate-200 text-slate-400'
                 }`}
               >
-                <Heart className={`w-5 h-5 ${isWishlisted ? 'fill-rose-500' : ''}`} />
+                <Heart className={`w-4 h-4 sm:w-5 sm:h-5 ${isWishlisted ? 'fill-rose-500' : ''}`} />
               </button>
             </div>
 
-            <h1 className="font-heading font-extrabold text-2xl md:text-3xl text-slate-900 mb-3">
+            <h1 className="font-heading font-extrabold text-xl sm:text-2xl md:text-3xl text-slate-900 mb-2 sm:mb-3">
               {product.title}
             </h1>
 
             <div className="flex items-center gap-2 mb-4">
-              <div className="flex items-center gap-1 bg-amber-50 px-2 py-1 rounded-lg border border-amber-200">
-                <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+              <div className="flex items-center gap-1 bg-amber-50 px-2 py-0.5 sm:py-1 rounded-lg border border-amber-200">
+                <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                 <span className="text-xs font-bold text-slate-800">{product.ratings || 4.5}</span>
               </div>
               <span className="text-xs text-slate-400">Verified Customer Ratings</span>
             </div>
 
-            <div className="flex items-baseline gap-3 mb-6">
-              <span className="font-heading font-extrabold text-3xl text-slate-900">
+            <div className="flex items-baseline gap-3 mb-4 sm:mb-6">
+              <span className="font-heading font-extrabold text-2xl sm:text-3xl text-slate-900">
                 ₹{product.price?.toLocaleString('en-IN')}
               </span>
-              <span className="text-sm text-slate-400 line-through">
+              <span className="text-xs sm:text-sm text-slate-400 line-through">
                 ₹{Math.round(product.price * 1.2)?.toLocaleString('en-IN')}
               </span>
               <Badge variant="accent">Save 20%</Badge>
             </div>
 
-            <p className="text-sm text-slate-600 leading-relaxed mb-6">
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
               {product.description}
             </p>
 
@@ -161,17 +161,17 @@ export const ProductDetail = () => {
             </div>
 
             {/* Guarantees */}
-            <div className="grid grid-cols-3 gap-2 pt-6 border-t border-slate-100 text-center text-[11px] text-slate-500">
+            <div className="grid grid-cols-3 gap-2 pt-4 sm:pt-6 border-t border-slate-100 text-center text-[10px] sm:text-[11px] text-slate-500">
               <div className="flex flex-col items-center gap-1">
-                <Truck className="w-5 h-5 text-brand-buy" />
+                <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-brand-buy" />
                 <span>Express Shipping</span>
               </div>
               <div className="flex flex-col items-center gap-1">
-                <ShieldCheck className="w-5 h-5 text-brand-accent" />
+                <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-brand-accent" />
                 <span>1 Year Warranty</span>
               </div>
               <div className="flex flex-col items-center gap-1">
-                <RotateCcw className="w-5 h-5 text-brand-cart" />
+                <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5 text-brand-cart" />
                 <span>7 Days Return</span>
               </div>
             </div>

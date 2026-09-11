@@ -13,10 +13,10 @@ export const Wishlist = () => {
 
   if (products.length === 0) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-16 text-center">
-        <div className="bg-white rounded-3xl p-12 border border-slate-200 shadow-sm flex flex-col items-center">
+      <div className="max-w-4xl mx-auto px-4 py-12 sm:py-16 text-center">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm flex flex-col items-center">
           <Heart className="w-12 h-12 text-slate-300 mb-3" />
-          <h2 className="font-heading font-bold text-lg text-slate-800 mb-1">Your Wishlist is Empty</h2>
+          <h2 className="font-heading font-bold text-base sm:text-lg text-slate-800 mb-1">Your Wishlist is Empty</h2>
           <p className="text-xs text-slate-500">Save items you like to view or purchase them later.</p>
         </div>
       </div>
@@ -24,9 +24,9 @@ export const Wishlist = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="font-heading font-extrabold text-2xl text-slate-800 mb-6">Your Saved Wishlist</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <h1 className="font-heading font-extrabold text-xl sm:text-2xl text-slate-800 mb-6">Your Saved Wishlist</h1>
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
         {products.map((product) => (
           <ProductCard key={product._id || product} product={product} />
         ))}

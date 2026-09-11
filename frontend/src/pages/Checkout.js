@@ -25,7 +25,6 @@ export const Checkout = () => {
   };
 
   const handleProceedToPayment = async () => {
-    // Basic Form Validation
     if (!shippingAddress.street || !shippingAddress.city || !shippingAddress.state || !shippingAddress.zipCode) {
       alert('Please fill in all shipping address fields.');
       return;
@@ -34,11 +33,9 @@ export const Checkout = () => {
     try {
       setLoading(true);
 
-      // 1. Create Checkout Order on Backend
       const res = await checkoutOrderApi(shippingAddress);
       const { razorpayOrder } = res.data;
 
-      // 2. Configure Razorpay Popup Modal
       const options = {
         key: process.env.REACT_APP_RAZORPAY_KEY_ID || 'rzp_test_dummy',
         amount: razorpayOrder.amount,
@@ -48,14 +45,13 @@ export const Checkout = () => {
         order_id: razorpayOrder.id,
         handler: async function (response) {
           try {
-            // 3. Verify Payment Signature on Backend
             await verifyPaymentApi({
               razorpayOrderId: response.razorpay_order_id,
               razorpayPaymentId: response.razorpay_payment_id,
               razorpaySignature: response.razorpay_signature,
             });
 
-            await fetchCart(); // Refresh cart state
+            await fetchCart();
             navigate('/orders');
           } catch (error) {
             alert('Payment Verification Failed: ' + (error.response?.data?.message || error.message));
@@ -77,12 +73,12 @@ export const Checkout = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="font-heading font-extrabold text-2xl text-slate-800 mb-8">
+    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <h1 className="font-heading font-extrabold text-xl sm:text-2xl text-slate-800 mb-6 sm:mb-8">
         Checkout Process
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
         <div className="lg:col-span-2">
           <ShippingForm formData={shippingAddress} onChange={handleInputChange} />
         </div>

@@ -31,46 +31,45 @@ export const Home = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-12 pb-16">
+    <div className="flex flex-col gap-8 sm:gap-12 pb-12 sm:pb-16 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
       {/* Hero Banner Section */}
-      <section className="bg-brand-header text-white rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-2xl border border-slate-800">
-        <div className="max-w-2xl relative z-10 flex flex-col gap-5">
-          <div className="inline-flex items-center gap-2 bg-brand-buy/20 border border-brand-buy/40 text-brand-buy px-3 py-1 rounded-full text-xs font-bold tracking-wide w-fit">
-            <Zap className="w-3.5 h-3.5 fill-current" /> NEXT-GEN TECH ARRIVALS
+      <section className="bg-brand-header text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-12 relative overflow-hidden shadow-xl border border-slate-800 mt-4 sm:mt-6">
+        <div className="max-w-2xl relative z-10 flex flex-col gap-3 sm:gap-5">
+          <div className="inline-flex items-center gap-1.5 bg-brand-buy/20 border border-brand-buy/40 text-brand-buy px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold tracking-wide w-fit">
+            <Zap className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" /> NEXT-GEN TECH ARRIVALS
           </div>
-          <h1 className="font-heading font-extrabold text-3xl sm:text-5xl leading-tight tracking-tight">
+          <h1 className="font-heading font-extrabold text-2xl sm:text-4xl md:text-5xl leading-tight tracking-tight">
             High-Performance <span className="text-brand-buy">Gaming Gear</span> & Accessories.
           </h1>
-          <p className="text-slate-300 text-sm md:text-base leading-relaxed">
+          <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
             Upgrade your setup with ultra-responsive mechanical keyboards, high-precision mice, and lossless wireless headphones.
           </p>
-          <div className="flex items-center gap-4 pt-2">
+          <div className="flex items-center gap-4 pt-1 sm:pt-2">
             <Link to="/shop">
-              <Button variant="buy" size="lg" icon={ArrowRight}>
+              <Button variant="buy" size="md" className="sm:text-base sm:px-6 sm:py-3" icon={ArrowRight}>
                 Explore Shop
               </Button>
             </Link>
           </div>
         </div>
 
-        {/* Floating Decorative Blur */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-cart/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-brand-cart/20 rounded-full blur-3xl pointer-events-none"></div>
       </section>
 
       {/* Category Grid Section */}
-      <section className="max-w-7xl mx-auto px-4 w-full">
-        <h2 className="font-heading font-bold text-xl text-slate-800 mb-6">Popular Categories</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <section className="w-full">
+        <h2 className="font-heading font-bold text-lg sm:text-xl text-slate-800 mb-4 sm:mb-6">Popular Categories</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {categories.map((cat) => {
             const Icon = cat.icon;
             return (
               <Link
                 key={cat.name}
                 to={`/shop?category=${cat.name}`}
-                className={`p-6 rounded-2xl border ${cat.bg} flex flex-col items-center justify-center gap-3 hover:scale-105 transition duration-200 cursor-pointer shadow-sm`}
+                className={`p-4 sm:p-6 rounded-2xl border ${cat.bg} flex flex-col items-center justify-center gap-2 sm:gap-3 hover:scale-[1.02] transition duration-200 cursor-pointer shadow-sm`}
               >
-                <Icon className="w-8 h-8" />
-                <span className="font-heading font-bold text-sm text-slate-800">{cat.name}</span>
+                <Icon className="w-6 h-6 sm:w-8 sm:h-8" />
+                <span className="font-heading font-bold text-xs sm:text-sm text-slate-800">{cat.name}</span>
               </Link>
             );
           })}
@@ -78,11 +77,11 @@ export const Home = () => {
       </section>
 
       {/* Featured Products Section */}
-      <section className="max-w-7xl mx-auto px-4 w-full">
-        <div className="flex justify-between items-end mb-6">
+      <section className="w-full">
+        <div className="flex justify-between items-end mb-4 sm:mb-6">
           <div>
-            <h2 className="font-heading font-bold text-xl text-slate-800">Trending Products</h2>
-            <p className="text-xs text-slate-500">Handpicked items with active discount pricing</p>
+            <h2 className="font-heading font-bold text-lg sm:text-xl text-slate-800">Trending Products</h2>
+            <p className="text-[11px] sm:text-xs text-slate-500">Handpicked items with active discount pricing</p>
           </div>
           <Link to="/shop" className="text-xs font-bold text-brand-cart hover:underline flex items-center gap-1">
             View All <ArrowRight className="w-3.5 h-3.5" />

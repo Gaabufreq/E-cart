@@ -35,19 +35,16 @@ export const Shop = () => {
   useEffect(() => {
     let updated = [...products];
 
-    // Filter by search query from URL
     if (initialSearch) {
       updated = updated.filter((p) =>
         p.title.toLowerCase().includes(initialSearch.toLowerCase())
       );
     }
 
-    // Filter by category
     if (selectedCategory) {
       updated = updated.filter((p) => p.category === selectedCategory);
     }
 
-    // Filter by price
     updated = updated.filter((p) => p.price <= priceRange);
 
     setFilteredProducts(updated);
@@ -59,9 +56,9 @@ export const Shop = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="mb-8">
-        <h1 className="font-heading font-extrabold text-2xl text-slate-800">
+    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <div className="mb-6 sm:mb-8">
+        <h1 className="font-heading font-extrabold text-xl sm:text-2xl text-slate-800">
           Shop All Products
         </h1>
         <p className="text-xs text-slate-500">
@@ -69,7 +66,7 @@ export const Shop = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 sm:gap-8">
         {/* Sidebar Filters */}
         <div className="lg:col-span-1">
           <ProductFilter

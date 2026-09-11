@@ -51,9 +51,9 @@ export const AdminOrders = () => {
   };
 
   return (
-    <div className="p-8 flex flex-col gap-6">
+    <div className="p-4 sm:p-8 flex flex-col gap-6">
       <div>
-        <h1 className="font-heading font-extrabold text-2xl text-slate-900">Orders Management</h1>
+        <h1 className="font-heading font-extrabold text-xl sm:text-2xl text-slate-900">Orders Management</h1>
         <p className="text-xs text-slate-500">Track customer purchases and update delivery statuses</p>
       </div>
 
@@ -62,7 +62,7 @@ export const AdminOrders = () => {
       ) : (
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs text-slate-600">
+            <table className="w-full min-w-[600px] text-left text-xs text-slate-600">
               <thead className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200 uppercase tracking-wider">
                 <tr>
                   <th className="p-4">Order Details</th>

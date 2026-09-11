@@ -31,7 +31,7 @@ export const Orders = () => {
       try {
         setCancellingId(orderId);
         await cancelOrderApi(orderId);
-        fetchOrders(); // Reload orders after DB update
+        fetchOrders();
       } catch (error) {
         alert(error.response?.data?.message || "Failed to cancel order");
       } finally {
@@ -58,10 +58,10 @@ export const Orders = () => {
 
   if (orders.length === 0) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-16 text-center">
-        <div className="bg-white rounded-3xl p-12 border border-slate-200 shadow-sm flex flex-col items-center">
+      <div className="max-w-4xl mx-auto px-4 py-12 sm:py-16 text-center">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm flex flex-col items-center">
           <ShoppingBag className="w-12 h-12 text-slate-300 mb-3" />
-          <h2 className="font-heading font-bold text-lg text-slate-800 mb-1">No Orders Placed Yet</h2>
+          <h2 className="font-heading font-bold text-base sm:text-lg text-slate-800 mb-1">No Orders Placed Yet</h2>
           <p className="text-xs text-slate-500">When you complete checkout, your active orders will appear here.</p>
         </div>
       </div>
@@ -69,16 +69,16 @@ export const Orders = () => {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8">
-      <h1 className="font-heading font-extrabold text-2xl text-slate-800 mb-6">Your Order History</h1>
+    <div className="max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <h1 className="font-heading font-extrabold text-xl sm:text-2xl text-slate-800 mb-6">Your Order History</h1>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-4 sm:gap-6">
         {orders.map((order) => (
-          <div key={order._id} className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm flex flex-col gap-4">
+          <div key={order._id} className="bg-white rounded-2xl border border-slate-200 p-4 sm:p-6 shadow-sm flex flex-col gap-3 sm:gap-4">
             <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
               <div>
                 <span className="text-xs font-bold text-slate-400">Order ID: #{order._id?.slice(-8)}</span>
-                <p className="text-xs text-slate-500">{new Date(order.createdAt).toLocaleDateString()}</p>
+                <p className="text-[11px] sm:text-xs text-slate-500">{new Date(order.createdAt).toLocaleDateString()}</p>
               </div>
               <Badge variant={getStatusBadgeVariant(order.status)}>
                 {order.status.toUpperCase()}
@@ -96,13 +96,12 @@ export const Orders = () => {
 
             <div className="border-t border-slate-100 pt-3 flex justify-between items-center">
               <div>
-                <span className="text-xs text-slate-500 block">Total Amount</span>
-                <span className="font-heading font-extrabold text-base text-brand-buy">
+                <span className="text-[10px] sm:text-xs text-slate-500 block">Total Amount</span>
+                <span className="font-heading font-extrabold text-sm sm:text-base text-brand-buy">
                   ₹{order.totalAmount?.toLocaleString('en-IN')}
                 </span>
               </div>
 
-              {/* Cancel Button - Active only if not delivered/cancelled */}
               {order.status !== 'cancelled' && order.status !== 'delivered' && (
                 <Button
                   variant="danger"

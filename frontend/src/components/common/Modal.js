@@ -20,7 +20,7 @@ export const Modal = ({ isOpen, onClose, title, children }) => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -36,11 +36,11 @@ export const Modal = ({ isOpen, onClose, title, children }) => {
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.95, opacity: 0, y: 20 }}
             transition={{ duration: 0.2 }}
-            className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden z-10 border border-slate-100"
+            className="relative w-full max-w-lg max-h-[90vh] flex flex-col bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden z-10 border border-slate-100"
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-slate-50">
-              <h3 className="font-heading font-bold text-lg text-slate-800">{title}</h3>
+            <div className="flex items-center justify-between px-4 sm:px-6 py-3.5 sm:py-4 border-b border-slate-100 bg-slate-50 shrink-0">
+              <h3 className="font-heading font-bold text-base sm:text-lg text-slate-800">{title}</h3>
               <button
                 onClick={onClose}
                 className="p-1 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-200 transition"
@@ -50,7 +50,7 @@ export const Modal = ({ isOpen, onClose, title, children }) => {
             </div>
 
             {/* Body */}
-            <div className="p-6">{children}</div>
+            <div className="p-4 sm:p-6 overflow-y-auto">{children}</div>
           </motion.div>
         </div>
       )}

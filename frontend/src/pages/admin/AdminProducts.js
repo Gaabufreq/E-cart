@@ -111,10 +111,10 @@ export const AdminProducts = () => {
   };
 
   return (
-    <div className="p-8 flex flex-col gap-6">
+    <div className="p-4 sm:p-8 flex flex-col gap-6">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
-          <h1 className="font-heading font-extrabold text-2xl text-slate-900">Product Management</h1>
+          <h1 className="font-heading font-extrabold text-xl sm:text-2xl text-slate-900">Product Management</h1>
           <p className="text-xs text-slate-500">Add, edit, or remove store inventory items</p>
         </div>
         <Button variant="buy" icon={Plus} onClick={() => handleOpenModal()}>
@@ -127,7 +127,7 @@ export const AdminProducts = () => {
       ) : (
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs text-slate-600">
+            <table className="w-full min-w-[600px] text-left text-xs text-slate-600">
               <thead className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200 uppercase tracking-wider">
                 <tr>
                   <th className="p-4">Product</th>
@@ -151,7 +151,7 @@ export const AdminProducts = () => {
                         <img
                           src={p.images?.[0] || 'https://via.placeholder.com/40'}
                           alt={p.title}
-                          className="w-10 h-10 object-contain rounded-lg bg-slate-100 p-1 border border-slate-200"
+                          className="w-10 h-10 object-contain rounded-lg bg-slate-100 p-1 border border-slate-200 shrink-0"
                         />
                         <span className="font-bold text-slate-800 line-clamp-1 max-w-xs">{p.title}</span>
                       </td>
@@ -218,7 +218,7 @@ export const AdminProducts = () => {
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Input
               label="Price (₹)"
               type="number"

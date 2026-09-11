@@ -1,4 +1,3 @@
-// src/pages/Register.jsx
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { User, Mail, Lock, ShoppingBag } from 'lucide-react';
@@ -28,13 +27,13 @@ export const Register = () => {
   };
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center px-4">
-      <div className="w-full max-w-md bg-white rounded-3xl border border-slate-200 p-8 shadow-xl">
+    <div className="min-h-[80vh] flex items-center justify-center px-4 py-8">
+      <div className="w-full max-w-md bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-xl">
         <div className="text-center mb-6">
           <div className="inline-flex bg-brand-buy p-3 rounded-2xl text-white mb-3">
             <ShoppingBag className="w-6 h-6" />
           </div>
-          <h2 className="font-heading font-extrabold text-2xl text-slate-900">Create Account</h2>
+          <h2 className="font-heading font-extrabold text-xl sm:text-2xl text-slate-900">Create Account</h2>
           <p className="text-xs text-slate-500 mt-1">Join VibrantTech for exclusive offers</p>
         </div>
 

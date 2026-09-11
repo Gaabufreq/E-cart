@@ -8,20 +8,24 @@ export const CartItem = ({ item }) => {
 
   if (!product) return null;
 
+  const productId = product._id || product;
+
   const handleIncrement = () => {
-    addToCart(product._id || product, 1);
+    addToCart(productId, 1);
   };
 
   const handleDecrement = () => {
     if (item.quantity > 1) {
-      addToCart(product._id || product, -1);
+      // Quantity 1 kam karne ke liye -1 bhej rahe hain
+      addToCart(productId, -1);
     } else {
-      removeFromCart(product._id || product);
+      // Quantity 1 ho toh item cart se remove ho jayega
+      removeFromCart(productId);
     }
   };
 
   const handleRemove = () => {
-    removeFromCart(product._id || product);
+    removeFromCart(productId);
   };
 
   const imageUrl = product.images && product.images.length > 0
@@ -51,7 +55,7 @@ export const CartItem = ({ item }) => {
       <div className="flex items-center gap-1 sm:gap-2 bg-slate-100 p-1 rounded-xl">
         <button
           onClick={handleDecrement}
-          className="p-1 rounded-lg text-slate-600 hover:bg-white hover:text-slate-900 transition"
+          className="p-1 rounded-lg text-slate-600 hover:bg-white hover:text-slate-900 transition active:scale-95"
           aria-label="Decrease quantity"
         >
           <Minus className="w-3 h-3" />
@@ -59,7 +63,7 @@ export const CartItem = ({ item }) => {
         <span className="text-xs font-bold text-slate-800 px-1">{item.quantity}</span>
         <button
           onClick={handleIncrement}
-          className="p-1 rounded-lg text-slate-600 hover:bg-white hover:text-slate-900 transition"
+          className="p-1 rounded-lg text-slate-600 hover:bg-white hover:text-slate-900 transition active:scale-95"
           aria-label="Increase quantity"
         >
           <Plus className="w-3 h-3" />

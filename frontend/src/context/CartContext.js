@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useContext, useCallback } from 'react';
-import { getCartApi, addToCartApi, updateCartQuantityApi, removeFromCartApi } from '../api/cart.api';
+import { getCartApi, addToCartApi, removeFromCartApi } from '../api/cart.api';
 import { AuthContext } from './AuthContext';
 
 export const CartContext = createContext();
@@ -35,11 +35,9 @@ export const CartProvider = ({ children }) => {
     return res;
   };
 
-  const updateQuantity = async (productId, newQuantity) => {
-    if (newQuantity <= 0) {
-      return removeFromCart(productId);
-    }
-    const res = await updateCartQuantityApi(productId, newQuantity);
+  // Delta-based update using existing /cart/add route
+  const updateQuantity = async (productId, delta) => {
+    const res = await addToCartApi(productId, delta);
     setCart(res.data);
     return res;
   };

@@ -5,14 +5,9 @@ export const getCartApi = async () => {
   return response.data;
 };
 
-// Update cart quantity handler
+// Unified Add/Update Quantity Handler
 export const addToCartApi = async (productId, quantity = 1) => {
   const response = await axiosInstance.post('/cart/add', { productId, quantity });
-  return response.data;
-};
-
-export const updateCartQuantityApi = async (productId, quantity) => {
-  const response = await axiosInstance.put('/cart/update', { productId, quantity });
   return response.data;
 };
 

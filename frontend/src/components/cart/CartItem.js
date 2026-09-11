@@ -1,22 +1,26 @@
+// frontend/src/components/cart/CartItem.js
+
 import React from 'react';
 import { Trash2, Plus, Minus } from 'lucide-react';
 import { useCart } from '../../hooks/useCart';
 
 export const CartItem = ({ item }) => {
-  const { updateQuantity, removeFromCart } = useCart();
+  const { addToCart, removeFromCart } = useCart();
   const product = item.product;
 
   if (!product) return null;
 
   const productId = product._id || product;
 
+  // Plus par click karne par +1 ka delta bhejenge
   const handleIncrement = () => {
-    updateQuantity(productId, item.quantity + 1);
+    addToCart(productId, 1);
   };
 
+  // Minus par click karne par -1 ka delta bhejenge
   const handleDecrement = () => {
     if (item.quantity > 1) {
-      updateQuantity(productId, item.quantity - 1);
+      addToCart(productId, -1);
     } else {
       removeFromCart(productId);
     }
@@ -32,12 +36,14 @@ export const CartItem = ({ item }) => {
 
   return (
     <div className="flex items-center gap-2 sm:gap-4 py-3 sm:py-4 border-b border-slate-100 last:border-0">
+      {/* Product Image */}
       <img
         src={imageUrl}
         alt={product.title}
         className="w-12 h-12 sm:w-16 sm:h-16 object-contain rounded-xl bg-slate-50 border border-slate-100 p-1 shrink-0"
       />
 
+      {/* Info */}
       <div className="flex-1 min-w-0">
         <h4 className="text-xs font-bold text-slate-800 truncate mb-0.5 sm:mb-1">
           {product.title}
@@ -47,6 +53,7 @@ export const CartItem = ({ item }) => {
         </p>
       </div>
 
+      {/* Quantity Controls */}
       <div className="flex items-center gap-1 sm:gap-2 bg-slate-100 p-1 rounded-xl">
         <button
           onClick={handleDecrement}
@@ -65,6 +72,7 @@ export const CartItem = ({ item }) => {
         </button>
       </div>
 
+      {/* Delete Icon */}
       <button
         onClick={handleRemove}
         className="p-1.5 sm:p-2 text-slate-400 hover:text-rose-500 transition"

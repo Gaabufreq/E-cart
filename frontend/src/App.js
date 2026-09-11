@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import { WishlistProvider } from './context/WishlistContext';
-
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { AdminSidebar } from './components/layout/AdminSidebar';
 import { ProtectedRoute } from './components/layout/ProtectedRoute';
 import { CartDrawer } from './components/cart/CartDrawer';
+import { SignatureIntro } from './components/SignatureIntro'; // Signature Intro Import
 
 import { Home } from './pages/Home';
 import { Shop } from './pages/Shop';
@@ -49,85 +49,94 @@ const LayoutWrapper = ({ children, onOpenCart }) => {
 
 export default function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isIntroFinished, setIsIntroFinished] = useState(false);
 
   return (
     <AuthProvider>
       <CartProvider>
         <WishlistProvider>
-          <Router>
-            <LayoutWrapper onOpenCart={() => setIsCartOpen(true)}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/shop" element={<Shop />} />
-                <Route path="/product/:id" element={<ProductDetail />} />
-                <Route path="/cart" element={<CartPage />} />
-                <Route
-                  path="/checkout"
-                  element={
-                    <ProtectedRoute>
-                      <Checkout />
-                    </ProtectedRoute>
-                  }
-                />
-                <Route
-                  path="/orders"
-                  element={
-                    <ProtectedRoute>
-                      <Orders />
-                    </ProtectedRoute>
-                  }
-                />
-                <Route
-                  path="/profile"
-                  element={
-                    <ProtectedRoute>
-                      <Profile />
-                    </ProtectedRoute>
-                  }
-                />
-                <Route
-                  path="/wishlist"
-                  element={
-                    <ProtectedRoute>
-                      <Wishlist />
-                    </ProtectedRoute>
-                  }
-                />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
+          {/* Signature Intro Animation */}
+          <SignatureIntro onComplete={() => setIsIntroFinished(true)} />
 
-                {/* Admin Routes */}
-                <Route
-                  path="/admin/dashboard"
-                  element={
-                    <ProtectedRoute adminOnly>
-                      <Dashboard />
-                    </ProtectedRoute>
-                  }
-                />
-                <Route
-                  path="/admin/products"
-                  element={
-                    <ProtectedRoute adminOnly>
-                      <AdminProducts />
-                    </ProtectedRoute>
-                  }
-                />
-                <Route
-                  path="/admin/orders"
-                  element={
-                    <ProtectedRoute adminOnly>
-                      <AdminOrders />
-                    </ProtectedRoute>
-                  }
-                />
+          {/* Main Website Wrapper with Smooth Fade-In Effect */}
+          <div
+            className={`transition-opacity duration-700 ${
+              isIntroFinished ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            }`}
+          >
+            <Router>
+              <LayoutWrapper onOpenCart={() => setIsCartOpen(true)}>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/shop" element={<Shop />} />
+                  <Route path="/product/:id" element={<ProductDetail />} />
+                  <Route path="/cart" element={<CartPage />} />
+                  <Route
+                    path="/checkout"
+                    element={
+                      <ProtectedRoute>
+                        <Checkout />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/orders"
+                    element={
+                      <ProtectedRoute>
+                        <Orders />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/profile"
+                    element={
+                      <ProtectedRoute>
+                        <Profile />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/wishlist"
+                    element={
+                      <ProtectedRoute>
+                        <Wishlist />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/register" element={<Register />} />
 
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </LayoutWrapper>
-
-            <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
-          </Router>
+                  {/* Admin Routes */}
+                  <Route
+                    path="/admin/dashboard"
+                    element={
+                      <ProtectedRoute adminOnly>
+                        <Dashboard />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/admin/products"
+                    element={
+                      <ProtectedRoute adminOnly>
+                        <AdminProducts />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/admin/orders"
+                    element={
+                      <ProtectedRoute adminOnly>
+                        <AdminOrders />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </LayoutWrapper>
+              <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+            </Router>
+          </div>
         </WishlistProvider>
       </CartProvider>
     </AuthProvider>

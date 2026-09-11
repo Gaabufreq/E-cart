@@ -10,7 +10,7 @@ schema.parse({
 return next();
 }catch(error){
     if(error.issues){
-        const errorMessage = error.issues.map((err) => err.message).join(", ");
+        const errorMessage = error.issues.map((err) => err.message).join(', ');
         return next(new AppError(errorMessage, 400));
     }   
     return next(error);

@@ -21,6 +21,7 @@ export class CartController {
         return res.status(200).json({success:true, message:"Item added to cart", data:cart})
     });
 
+
     removeFromCart = catchAsync(async(req,res) => {
         const {productId} = req.params;
         const cart = await cartService.removeFromCart(req.user.id, productId);

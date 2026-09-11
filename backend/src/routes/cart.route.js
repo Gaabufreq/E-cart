@@ -12,6 +12,7 @@ cartRouter.use(authenticate)
 
 cartRouter.get("/",cartController.getCart);
 cartRouter.post("/add",validate(addToCartSchema), cartController.addToCart);
+
 cartRouter.delete("/remove/:productId", cartController.removeFromCart);
 
 export default cartRouter

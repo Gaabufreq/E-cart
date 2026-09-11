@@ -3,7 +3,7 @@ import { Trash2, Plus, Minus } from 'lucide-react';
 import { useCart } from '../../hooks/useCart';
 
 export const CartItem = ({ item }) => {
-  const { addToCart, removeFromCart } = useCart();
+  const { updateQuantity, removeFromCart } = useCart();
   const product = item.product;
 
   if (!product) return null;
@@ -11,15 +11,13 @@ export const CartItem = ({ item }) => {
   const productId = product._id || product;
 
   const handleIncrement = () => {
-    addToCart(productId, 1);
+    updateQuantity(productId, item.quantity + 1);
   };
 
   const handleDecrement = () => {
     if (item.quantity > 1) {
-      // Quantity 1 kam karne ke liye -1 bhej rahe hain
-      addToCart(productId, -1);
+      updateQuantity(productId, item.quantity - 1);
     } else {
-      // Quantity 1 ho toh item cart se remove ho jayega
       removeFromCart(productId);
     }
   };
@@ -34,14 +32,12 @@ export const CartItem = ({ item }) => {
 
   return (
     <div className="flex items-center gap-2 sm:gap-4 py-3 sm:py-4 border-b border-slate-100 last:border-0">
-      {/* Product Image */}
       <img
         src={imageUrl}
         alt={product.title}
         className="w-12 h-12 sm:w-16 sm:h-16 object-contain rounded-xl bg-slate-50 border border-slate-100 p-1 shrink-0"
       />
 
-      {/* Info */}
       <div className="flex-1 min-w-0">
         <h4 className="text-xs font-bold text-slate-800 truncate mb-0.5 sm:mb-1">
           {product.title}
@@ -51,7 +47,6 @@ export const CartItem = ({ item }) => {
         </p>
       </div>
 
-      {/* Quantity Controls */}
       <div className="flex items-center gap-1 sm:gap-2 bg-slate-100 p-1 rounded-xl">
         <button
           onClick={handleDecrement}
@@ -70,7 +65,6 @@ export const CartItem = ({ item }) => {
         </button>
       </div>
 
-      {/* Delete Icon */}
       <button
         onClick={handleRemove}
         className="p-1.5 sm:p-2 text-slate-400 hover:text-rose-500 transition"
